@@ -1,5 +1,5 @@
 f = open("input/day1.txt", "r").read().split('\n\n')
-
+#comment
 f = [line.split('\n') for line in f]
 
 f = [[int(n) for n in line] for line in f]
