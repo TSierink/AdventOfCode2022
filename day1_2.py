@@ -4,4 +4,6 @@ f = [line.split('\n') for line in f]
 
 f = [[int(n) for n in line] for line in f]
 
-print(max([sum(line) for line in f]))
+sums = [sum(line) for line in f]
+sums.sort(reverse=True)
+print(sum(sums[:3]))
